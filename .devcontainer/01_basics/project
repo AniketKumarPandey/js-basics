@@ -1,6 +1,29 @@
 ##color switching
 ```javascript
+const buttons = document.querySelectorAll('.button');
+const body = document.querySelector('body');
 
+buttons.forEach(function (button) {
+   
+
+    let sum = 0;
+    button.addEventListener('click', function (e) {
+        if (e.target.id === 'red') {
+            body.style.backgroundColor = e.target.id;
+            body.style.borderColor = "blue";
+            
+        }
+        if (e.target.id === 'olive') {
+            body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === 'burlywood') {
+            body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === 'grey') {
+            body.style.backgroundColor = e.target.id;
+        }
+    })
+})
 
 
 ```
